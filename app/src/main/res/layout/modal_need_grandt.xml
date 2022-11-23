@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="200dp"
+        android:background="@color/black"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+
+        <TextView
+            android:id="@+id/modal_coins_need_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="Requiere permisos"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/modal_coins_need_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Para publicar en el foro inicia sesión, sino tienes una cuenta registrate gratis."
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/modal_iniciar_sesion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight=".5"
+                android:background="@color/black"
+                android:text="Agregar"
+                android:textColor="@color/white" />
+
+
+            <Button
+                android:id="@+id/modal_registrarse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:background="@color/black"
+                android:text="Cerrar"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

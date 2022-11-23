@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DecisionActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@color/black"
+            />
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:padding="25dp">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="64dp"
+            android:background="@color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Distrito de emprendedores"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/atras"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="20dp"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:textSize="40dp"
+        tools:ignore="MissingConstraints" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/linearAccesso"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center|bottom"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:src="@color/white"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/splash_text_spook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image_logo_splash"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="GRECO"
+                    android:textColor="#eee"
+                    android:textSize="40sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/accessRelatoGoogle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:visibility="gone"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="14dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="-47dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Inicia sesión con GMAIL"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/accesso_login_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:hint="Correo electronico"
+                    android:inputType="textEmailAddress"
+                    android:outlineAmbientShadowColor="@color/white"
+                    android:outlineSpotShadowColor="@color/white"
+                    android:shadowColor="@color/white"
+                    android:textColor="@color/white"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="@color/white"
+                    android:textColorLink="@color/white"
+                   />
+
+                <EditText
+                    android:id="@+id/accesso_login_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:hint="Contraseña"
+                    android:inputType="textPassword"
+                    android:outlineAmbientShadowColor="@color/white"
+                    android:outlineSpotShadowColor="@color/white"
+                    android:shadowColor="@color/white"
+                    android:textColor="@color/white"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="@color/white"
+                    android:textColorLink="@color/white"
+                     />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="¿Has olvidado tu contraseña? "
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/acceso_forget_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Recuperala aquí"
+                        android:textColor="#FFF" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/acceso_reinicio_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="¿No tienes una cuenta?"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/acceso_create_register"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text=" Crear cuenta."
+                        android:textColor="#FFF"
+                        android:textStyle="" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Verify captcha"
+                    android:visibility="gone" />
+
+
+                <FrameLayout
+                    android:id="@+id/accesso_login_btn"
+                    android:layout_width="150dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_marginLeft="22dp"
+                        android:clickable="false" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:clickable="false"
+                        android:gravity="center"
+                        android:text="Continuar"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+                </FrameLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Al hacer click en omitir estas aceptando los"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/txt_terminos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="terminos y condiciones de uso políticas de privacidad."
+                        android:textColor="#2B4DC8" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/omitir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="right"
+                    android:text="Omitir "
+                    android:visibility="gone"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="60dp"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="©"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="false"
+        android:gravity="center"
+        android:textSize="13dp"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:text="Law Technology 2022"
+        android:layout_marginBottom="40dp"
+        android:textColor="@color/white" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/btnToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:background="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=" Registrate GRATIS "
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
